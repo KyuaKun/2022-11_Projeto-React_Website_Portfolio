@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Navbar } from "./components/Navbar";
-import { DotGroup } from "./components/DotGroup";
-import { Landing } from "./components/Landing";
+import { Navbar } from "./pages/Navbar";
+import { DotGroup } from "./pages/DotGroup";
+import { Landing } from "./pages/Landing";
 import { useMediaQuery } from "./hooks/useMediaQuery";
 
 function App() {
@@ -29,14 +29,15 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="w-5/6 mx-auto md:h-full"></div>
-      {isAboveMediumScreen && (
-        <DotGroup
-          selectedPage={selectedPage}
-          setSelectedPage={setSelectedPage}
-        />
-      )}
-      <Landing />
+      <div className="w-5/6 mx-auto md:h-full">
+        {isAboveMediumScreen && (
+          <DotGroup
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+          />
+        )}
+        <Landing />
+      </div>
     </div>
   );
 }
