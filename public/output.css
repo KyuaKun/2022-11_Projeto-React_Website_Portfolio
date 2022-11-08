@@ -630,8 +630,8 @@ video {
   margin-top: 3rem;
 }
 
-.ml-\[33\%\]{
-  margin-left: 33%;
+.ml-5{
+  margin-left: 1.25rem;
 }
 
 .mt-10{
@@ -642,16 +642,12 @@ video {
   margin-bottom: 1.75rem;
 }
 
+.ml-\[33\%\]{
+  margin-left: 33%;
+}
+
 .mt-5{
   margin-top: 1.25rem;
-}
-
-.ml-10{
-  margin-left: 2.5rem;
-}
-
-.ml-5{
-  margin-left: 1.25rem;
 }
 
 .flex{
@@ -844,14 +840,14 @@ video {
   line-height: 1;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-2xl{
@@ -937,11 +933,6 @@ body,
 .before\:z-\[-1\]::before{
   content: var(--tw-content);
   z-index: -1;
-}
-
-.before\:z-\[1\]::before{
-  content: var(--tw-content);
-  z-index: 1;
 }
 
 .before\:h-6::before{
