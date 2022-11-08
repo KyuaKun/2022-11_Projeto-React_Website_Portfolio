@@ -3,9 +3,9 @@
 ## Site Portfolio responsivo em React.
 
 ```
-1: React.<br>
-2: Tailwind CSS.<br>
-3: Validações de senha. <br>
-4: Framer Motion.<br>
-5: React Hook Form. <br>
+1: React.
+2: Tailwind CSS.
+3: Validações de senha.
+4: Framer Motion.
+5: React Hook Form.
 ```
