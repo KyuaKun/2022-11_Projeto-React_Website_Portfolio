@@ -64,6 +64,47 @@ export const Navbar = ({ selectedPage, setSelectedPage }) => {
             <img alt="menu" src="../assets/menu-icon.svg" />
           </button>
         )}
+
+        {/* POPUP MENU QUANDO MOBILE */}
+
+        {!isAboveSmallScreens && menuToggled && (
+          <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+            {/* CLOSE ICON */}
+            <div className="flex justify-end p-12">
+              <button onClick={() => setMenuToggled(!menuToggled)}>
+                <img alt="close" src="../assets/close-icon.svg" />
+              </button>
+            </div>
+            {/* MENU ITEMS */}
+            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
+              <Link
+                page="Home"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Skills"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Projects"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Testimonials"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Contacts"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
