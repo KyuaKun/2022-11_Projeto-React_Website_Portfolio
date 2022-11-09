@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { Navbar } from "./pages/Navbar";
 import { DotGroup } from "./pages/DotGroup";
 import { Landing } from "./pages/Landing";
+import { MySkills } from "./pages/MySkills";
+
+import { LineGradient } from "./components/LineGradient";
 import { useMediaQuery } from "./hooks/useMediaQuery";
 
 function App() {
@@ -13,13 +16,12 @@ function App() {
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
+        setSelectedPage("home");
       }
-      if (window.scrollY !== 0) {
-        setIsTopOfPage(false);
-      }
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
+      if (window.scrollY !== 0) setIsTopOfPage(false);
     };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -37,6 +39,10 @@ function App() {
           />
         )}
         <Landing />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <MySkills />
       </div>
     </div>
   );
