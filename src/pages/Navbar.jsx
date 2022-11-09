@@ -21,7 +21,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 export const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [menuToggled, setMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
-  const navbarBackGround = isTopOfPage ? "" : "bg-red";
+  const navbarBackGround = isTopOfPage ? "" : "transition duration-1000 bg-red";
 
   return (
     <nav className={`${navbarBackGround} z-40 w-full fixed top-0 py-6`}>
