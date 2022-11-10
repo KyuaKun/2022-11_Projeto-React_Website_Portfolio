@@ -6,8 +6,8 @@ export const MySkills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   return (
-    <section id="skills" className="pt-10 pb-24">
-      <div className="md:flex md:justify-between md:gap-16 mt-32">
+    <section id="habilidades" className="pt-10 pb-24">
+      <div className="md:flex md:justify-between md:gap-16 mt-28">
         <motion.div
           className="md:w-1/3"
           initial="hidden"
