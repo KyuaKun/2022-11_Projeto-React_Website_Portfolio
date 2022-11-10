@@ -5,6 +5,8 @@ import { Landing } from "./pages/Landing";
 import { MySkills } from "./pages/MySkills";
 import { Projects } from "./pages/Projects";
 import { Testimonials } from "./pages/Testimonials";
+import { Contacts } from "./pages/Contacts";
+import { Footer } from "./pages/Footer";
 import { LineGradient } from "./components/LineGradient";
 import { useMediaQuery } from "./hooks/useMediaQuery";
 import { motion } from "framer-motion";
@@ -52,14 +54,22 @@ function App() {
       <div className="w-5/6 mx-auto md:h-full md:mb-60">
         <MySkills />
       </div>
+
       <LineGradient />
       <div className="w-5/6 mx-auto">
         <Projects />
       </div>
+
       <LineGradient />
       <div className="w-5/6 mx-auto">
         <Testimonials />
       </div>
+
+      <LineGradient />
+      <div className="w-5/6 mx-auto">
+        <Contacts />
+      </div>
+      <Footer />
     </div>
   );
 }
