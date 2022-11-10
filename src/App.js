@@ -4,6 +4,7 @@ import { DotGroup } from "./pages/DotGroup";
 import { Landing } from "./pages/Landing";
 import { MySkills } from "./pages/MySkills";
 import { Projects } from "./pages/Projects";
+import { Testimonials } from "./pages/Testimonials";
 import { LineGradient } from "./components/LineGradient";
 import { useMediaQuery } from "./hooks/useMediaQuery";
 import { motion } from "framer-motion";
@@ -39,7 +40,7 @@ function App() {
             setSelectedPage={setSelectedPage}
           />
         )}
-         <motion.div
+        <motion.div
           margin="0 0 -200px 0"
           amount="all"
           onViewportEnter={() => setSelectedPage("home")}
@@ -48,12 +49,16 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full md:mb-40">
+      <div className="w-5/6 mx-auto md:h-full md:mb-60">
         <MySkills />
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto">
         <Projects />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto">
+        <Testimonials />
       </div>
     </div>
   );

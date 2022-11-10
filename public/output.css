@@ -739,6 +739,10 @@ video {
   margin-top: 5rem;
 }
 
+.mt-48{
+  margin-top: 12rem;
+}
+
 .flex{
   display: flex;
 }
@@ -797,6 +801,10 @@ video {
 
 .w-2\/3{
   width: 66.666667%;
+}
+
+.w-2\/4{
+  width: 50%;
 }
 
 .max-w-\[400px\]{
@@ -861,6 +869,10 @@ video {
 
 .gap-2{
   gap: 0.5rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .rounded-full{
@@ -989,6 +1001,18 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.pt-16{
+  padding-top: 4rem;
+}
+
+.pt-32{
+  padding-top: 8rem;
+}
+
+.pb-16{
+  padding-bottom: 4rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1029,6 +1053,11 @@ video {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold{
@@ -1124,9 +1153,24 @@ body,
   left: -2.5rem;
 }
 
+.before\:top-\[120px\]::before{
+  content: var(--tw-content);
+  top: 120px;
+}
+
+.before\:left-1\/2::before{
+  content: var(--tw-content);
+  left: 50%;
+}
+
 .before\:z-\[-1\]::before{
   content: var(--tw-content);
   z-index: -1;
+}
+
+.before\:-ml-\[110px\]::before{
+  content: var(--tw-content);
+  margin-left: -110px;
 }
 
 .before\:h-6::before{
@@ -1180,6 +1224,21 @@ body,
   content: var(--tw-content);
   --tw-border-opacity: 1;
   border-color: rgb(44 188 233 / var(--tw-border-opacity));
+}
+
+.before\:content-person1::before{
+  --tw-content: url('./assets/person-1.png');
+  content: var(--tw-content);
+}
+
+.before\:content-person2::before{
+  --tw-content: url('./assets/person-2.png');
+  content: var(--tw-content);
+}
+
+.before\:content-person3::before{
+  --tw-content: url('./assets/person-3.png');
+  content: var(--tw-content);
 }
 
 .hover\:bg-blue:hover{
@@ -1268,6 +1327,10 @@ body,
     margin-bottom: 10rem;
   }
 
+  .md\:mb-60{
+    margin-bottom: 15rem;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -1314,6 +1377,10 @@ body,
 
   .md\:gap-16{
     gap: 4rem;
+  }
+
+  .md\:text-left{
+    text-align: left;
   }
 
   .md\:text-start{
