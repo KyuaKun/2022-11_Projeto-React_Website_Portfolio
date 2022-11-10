@@ -3,9 +3,10 @@ import { Navbar } from "./pages/Navbar";
 import { DotGroup } from "./pages/DotGroup";
 import { Landing } from "./pages/Landing";
 import { MySkills } from "./pages/MySkills";
-
+import { Projects } from "./pages/Projects";
 import { LineGradient } from "./components/LineGradient";
 import { useMediaQuery } from "./hooks/useMediaQuery";
+import { motion } from "framer-motion";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -38,11 +39,21 @@ function App() {
             setSelectedPage={setSelectedPage}
           />
         )}
-        <Landing />
+         <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("home")}
+        >
+          <Landing setSelectedPage={setSelectedPage} />
+        </motion.div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto md:h-full md:mb-40">
         <MySkills />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto">
+        <Projects />
       </div>
     </div>
   );
