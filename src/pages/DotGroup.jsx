@@ -15,31 +15,31 @@ export const DotGroup = ({ selectedPage, setSelectedPage }) => {
       />
 
       <AnchorLink
-        className={`${selectedPage === "skills" ? selectedStyles : "bg-dark-grey"}
+        className={`${selectedPage === "habilidades" ? selectedStyles : "bg-dark-grey"}
           w-3 h-3 rounded-full`}
-        href="#skills"
-        onClick={() => setSelectedPage("skills")}
+        href="#habilidades"
+        onClick={() => setSelectedPage("habilidades")}
       />
 
       <AnchorLink
-        className={`${selectedPage === "projects" ? selectedStyles : "bg-dark-grey"}
+        className={`${selectedPage === "projetos" ? selectedStyles : "bg-dark-grey"}
           w-3 h-3 rounded-full`}
-        href="#projects"
-        onClick={() => setSelectedPage("projects")}
+        href="#projetos"
+        onClick={() => setSelectedPage("projetos")}
       />
 
       <AnchorLink
-        className={`${selectedPage === "testimonials" ? selectedStyles : "bg-dark-grey"}
+        className={`${selectedPage === "depoimentos" ? selectedStyles : "bg-dark-grey"}
           w-3 h-3 rounded-full`}
-        href="#testimonials"
-        onClick={() => setSelectedPage("testimonials")}
+        href="#depoimentos"
+        onClick={() => setSelectedPage("depoimentos")}
       />
 
       <AnchorLink
-        className={`${selectedPage === "contacts" ? selectedStyles : "bg-dark-grey"}
+        className={`${selectedPage === "contatos" ? selectedStyles : "bg-dark-grey"}
           w-3 h-3 rounded-full`}
-        href="#contacts"
-        onClick={() => setSelectedPage("contacts")}
+        href="#contatos"
+        onClick={() => setSelectedPage("contatos")}
       />
     </div>
   );
