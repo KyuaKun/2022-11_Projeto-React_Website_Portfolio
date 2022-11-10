@@ -15,4 +15,4 @@ Em construção...
 
 ## Overview do projeto: 
 
-<img src="https://user-images.githubusercontent.com/87536346/201131616-d1294792-cb96-43fb-95ea-286ceb248ca2.gif" />
+<img src="https://user-images.githubusercontent.com/87536346/201133211-9fb378f7-b5c4-4a30-b0de-3699bdeeecd7.gif" />
